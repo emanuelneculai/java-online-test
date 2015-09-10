@@ -1,4 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 
-    &copy;Emanuel Neculai
+<div class="mastfoot">
+	<p>&copy;Emanuel Neculai.</p>
+</div>

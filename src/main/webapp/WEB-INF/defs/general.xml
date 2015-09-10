@@ -4,15 +4,20 @@
        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
 <tiles-definitions>
 
-  <definition name="common" template="/WEB-INF/layouts/classic.jsp">
-    <put-attribute name="header" value="/WEB-INF/layouts/header.jsp" />
-    <put-attribute name="menu" value="/WEB-INF/layouts/menu.jsp" />
-    <put-attribute name="footer" value="/WEB-INF/layouts/footer.jsp" />
-  </definition>
-  
-  <definition name="index" extends="common">
-    <put-attribute name="title" value="Online Test" />
-    <put-attribute name="body" value="/WEB-INF/jsp/index.jsp" />
-  </definition>
-  
+	<definition name="common" template="/WEB-INF/layouts/classic.jsp">
+		<put-attribute name="title"  value="Online Test" />
+		<put-attribute name="header" value="/WEB-INF/layouts/header.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/layouts/footer.jsp" />
+	</definition>
+
+	<definition name="index" extends="common">
+		<put-attribute name="body_content">
+			<definition template="/WEB-INF/layouts/body.jsp">
+				<put-attribute name="menu" value="/WEB-INF/layouts/menu.jsp" />
+				<put-attribute name="content" value="/WEB-INF/jsp/index.jsp" />
+			</definition>
+		</put-attribute>
+	</definition>
+
+
 </tiles-definitions>

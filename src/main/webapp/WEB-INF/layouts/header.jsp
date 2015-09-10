@@ -1,3 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-	<h1> Online Test</h1>
+	pageEncoding="UTF-8"%>
+<div class="masthead">
+<h1>OT</h1>
+</div>
